@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(1,102,255,1)25%, rgb(223, 3, 243)50%)
+}
+
+h1 {
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 50px;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+#input-field {
+    height: 35px;
+    width: 300px;
+    padding: 15px;
+    border: none;
+}
+
+#input-field:focus {
+    height: 35px;
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-app >h2 {
+    counter-reset: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-top: 25px;
+
+}
+
+.row .search {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #002765;
+    color: #fff;
+    border-radius: 30px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    border-radius: 30px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.controls {
+    padding: 10px;
+    margin: 20px 20px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controls span:hover {
+    cursor: pointer;
+}
+
+.controls span.Write {
+    background-color: #002765;
+    color: #fff;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #555;
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 8px;
+    margin-top: 8px;
+    border-radius: 30px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    align-items: center;
+    justify-items: center;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.setting > img {
+    margin: 5px;
+    width: 30px;
+    height: auto;
+}
+.edit {
+    background-color: greenyellow;
+}
+.delete {
+    background-color: #ff5945;
+}
+ul li img:hover {
+    cursor: pointer;
+}
+
+ul li label {
+    display: flex;
+}
+
+ul li label input {
+    margin-right: 10px;
+    width: 20px;
+    height: auto;
+}
+
+ul li label> input:checked {
+    margin-right: 10px;
+    width: 20px;
+    height: auto;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li::before {
+ text-decoration: none;
+}
+
+.Write {
+    border: 1px #002765;
+}
